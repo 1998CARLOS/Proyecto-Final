@@ -1,0 +1,124 @@
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+/*ENCABEZADO*/
+header{
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  text-align: right;
+}
+header h1{
+    text-shadow: 2px 2px 5px #02010a;
+    text-align: left;
+}
+header a[href]{
+  color: white;
+}
+a[href='paisajes.html']{
+  text-decoration:none ;
+}
+/*GELARIA*/
+.galeria{
+  background-color: #d5c75f;
+  border-radius: 1px 1px 1px 1px;
+  display: flex;
+  text-align: center;
+	flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.galeria1{
+  background-color: #d5c75f;
+  border-radius: 1px 1px 1px 1px;
+  display: flex;
+  text-align: center;
+	flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*FILTROS*/
+#imagen1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+#imagen2, #imagen4, #imagen6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#imagen3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+/*PIE DE PAGINA*/
+.footer{
+background-color: #C6d5c5;
+color: black;
+border-radius: 0px 0px 10px 10px;
+display: flex;
+text-align: justify;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+/*desktop-movil*/
+@media all and (max-width: 720px){
+.footer{
+  width: 900%;
+}
+#Contacto{
+  width: 100%;
+}
+#Terminos{
+  width: 100%;
+}
+#RedesSociales{
+  width: 100%;
+}
+#Derechos{
+  width: 100%;
+}
+}
+@media all and (max-width: 421px) and (min-width:720px){
+.footer{
+  width: 100%;
+}
+#Contacto{
+  width: 100%;
+}
+#Terminos{
+  width: 100%;
+}
+#RedesSociales{
+  width: 100%;
+}
+#Derechos{
+  width: 100%;
+}
+}
+@media all and (max-width: 420px){
+.footer{
+  width: 100%;
+  text-align: center;
+}
+#Contacto{
+  width: 100%;
+  order: 1;
+}
+#Terminos{
+  width: 100%;
+  order: 2;
+}
+#RedesSociales{
+  width: 100%;
+  order: 3;
+}
+#Derechos{
+  width: 100%;
+  order: 4;
+}
+}
